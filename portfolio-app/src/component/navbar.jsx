@@ -1,5 +1,5 @@
 
-
+//
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from '@chakra-ui/react'
