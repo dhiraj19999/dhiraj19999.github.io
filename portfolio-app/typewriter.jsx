@@ -10,4 +10,6 @@
             delaySpeed={1000}
            
           />
-        </span></Text>    
+        </span></Text>
+        
+

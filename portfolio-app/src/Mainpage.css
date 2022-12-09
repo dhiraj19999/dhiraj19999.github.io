@@ -1,0 +1,11 @@
+.navbar.active{
+
+    background-color: brown;
+}
+
+@media all and (min-width:566px) and (max-width:774px){
+    .text{
+        font-size: 10px;
+    }
+  }
+  

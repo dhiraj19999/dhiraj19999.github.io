@@ -1,9 +1,9 @@
 import React from 'react'
-
-import { Image } from '@chakra-ui/react'
+import { useState } from 'react'
+import { Image,Input} from '@chakra-ui/react'
 import { Avatar } from '@chakra-ui/react'
 
-import './navbar.css'
+import '../Mainpage.css'
 import { Flex, Spacer,SimpleGrid } from '@chakra-ui/react'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from '@chakra-ui/react'
@@ -12,8 +12,59 @@ import { GridItem,Grid } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
 import { HStack } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/react';
-import img1 from '../Images/my.jpg.png'
+import { useToast } from '@chakra-ui/react'
+import{FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {FaLinkedin,FaGithub} from 'react-icons/fa'
+  import {IoMdCall} from 'react-icons/io'
+  import {MdEmail} from 'react-icons/md'
+  import emailjs from '@emailjs/browser'
+import img1 from '../Images/bewakoof.jpg'
 function Mainpage() {
+const [name,setName]=useState('')
+const [email,setEmail]=useState('')
+const [message,setMessage]=useState('')
+const[tost,setTost]=useState(false)
+
+const toast=useToast()
+const form={
+
+  from_name:name,
+  email_id:email,
+  message:message
+
+}
+
+const sendEmail=()=>{
+
+  emailjs.send('service_amv7b8j','template_imu5bv7',form,'EzPjmd_YlK35hXceC').then((res)=>{
+
+    return res
+  }).then((data)=>{
+    console.log(JSON.stringify(data))
+
+     return toast({
+      title: 'Message Sent successfully',
+      position: 'top',
+      isClosable: true,
+      status:'success'
+    })
+  })
+
+setName('')
+setEmail('')
+setMessage('')
+
+
+
+
+}
+
+
+
+
+
+
 
 
 //  skills //
@@ -74,15 +125,15 @@ function skilClick (e){
 
 <Box position={'fixed'}    >
 <nav className='navbar'>
-<Grid   templateColumns='repeat(2, 1fr)' gap={6} mt='2.5' pos='relative' backgroundColor={'blackAlpha.500'}>
-  <GridItem w='2xl' h='10' mb='14' ><Text fontSize={{sm:'2xl',md:'3xl',lg:'6xl'}}  color='#20b2aa'>Dhiraj Garad</Text></GridItem>
-  <GridItem w='4xl' h='10' mt='30'  ><Box>
-  <HStack spacing='24px' pos={'relative'}>
-    <Box w='140px' h='10'  ><Link color={'pink.200'} fontSize={{sm:'2xs',md:'2xl',lg:'3xl'}} href='.home'  onClick={homeClick} >Home</Link></Box>
-    <Box w='140px' h='10' > <Link href='.about' onClick={haClick} color={'pink.200'} fontSize='3xl'>About</Link></Box>
-    <Box w='140px' h='10'  > <Link  href='.skills' onClick={skilClick} color={'pink.200'} fontSize='3xl'>Skills</Link></Box>
-    <Box w='140px' h='10'  > <Link color={'pink.200'} fontSize='3xl'>Projects</Link></Box>
-    <Box w='140px' h='10'  > <Link color={'pink.200'} fontSize='3xl'>Contact</Link></Box>
+<Grid   templateColumns='repeat(2, 1fr)' gap={2} mt='2.5' pos='relative' backgroundColor={'blackAlpha.700'}>
+  <GridItem w='2xl' h='1' mb='20'  mt={{sm:'6',md:'5',lg:'2'}} ml={{lg:"-16",md:"-56",sm:"-60"}} ><Text fontSize={{sm:'2xl',md:'3xl',lg:'5xl'}}  color='#20b2aa'>Dhiraj Garad</Text></GridItem>
+  <GridItem w='4xl' h='10' mt='30' ml={{md:"-40",sm:"-40",lg:"0"}}  ><Box>
+  <HStack spacing='0px'  >
+    <Box w='140px' h='10' mt='-1'  ><Link color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}} href='.home'  onClick={homeClick} >Home</Link></Box>
+    <Box w='140px' h='10'  > <Link href='.about' onClick={haClick} color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>About</Link></Box>
+    <Box w='140px' h='10'  > <Link  href='.skills' onClick={skilClick} color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Skills</Link></Box>
+    <Box w='140px' h='10'  > <Link color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Projects</Link></Box>
+    <Box w='140px' h='10'  > <Link color={'pink.200'}fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Contact</Link></Box>
   </HStack>
 
 
@@ -96,19 +147,19 @@ function skilClick (e){
 
 
 
-<Text color={'#f7797d'} fontSize='5xl' ml='-20'>  Hello, I am a
+<Text color={'#f7797d'} fontSize={{md:"3xl",lg:"5xl",sm:"2xl"}} ml={{md:"-20",lg:"-30"}} mt={{md:"-20",sm:"-28"}}>  Hello, I am a
  
  
  
  </Text> 
 
  
- <Text color={'#ffccff'} ml='170' fontSize='6xl'>Full Stack Developer</Text>
+ <Text color={'#ffccff'} ml={{lg:'34',md:"26",sm:"20"}} fontSize={{md:'4xl',lg:"6xl",sm:"3xl"}}>Full Stack Developer</Text>
 
 
 
 
- <Link textDecoration={'none'} href='https://drive.google.com/u/0/uc?id=1nSeTIswakkmlo2y4GTr3AfwfIdbBEw0i&export=download'>  <Button colorScheme='purple' ml='-60' mt='50' size='lg'  _hover={{bgColor:'pink.400',color:'black'}}><Text fontSize={'2xl'}>Resume</Text></Button></Link> 
+ <Link textDecoration={'none'}  href='https://drive.google.com/u/0/uc?id=1nSeTIswakkmlo2y4GTr3AfwfIdbBEw0i&export=download'>  <Button colorScheme='purple' ml={{md:"-30",lg:"-60"}} mt={{md:'6',lg:"50",sm:"1"}} size={{lg:"lg",sm:"sm"}}  _hover={{bgColor:'pink.400',color:'black'}}><Text fontSize={'2xl'}>Resume</Text></Button></Link> 
 
 </Box>
 
@@ -164,17 +215,17 @@ function skilClick (e){
  
  <section className='about'>
  
- <Text  color={'black'} fontSize='6xl' pt={'100'}  >About Me</Text>
+ <Text  color={'black'} fontSize={{lg:'5xl',sm:"2xl",md:"3xl"}} pt={'100'}  >About Me</Text>
 
 
 
 
-    <div style={{display:'flex'}}>
+    <Box style={{display:'flex'}}>
     
-    <div></div>
     
-    <div style={{width:'930px',marginLeft:'800px',marginTop:'200px'}}>
-    <p style={{  fontSize:'29px',lineHeight:'24px',marginBottom:'40px',textAlign:"left",marginRight:'30px',color:'black',fontWeight:'bold',fontFamily:'sans-serif',height:'2px'}}  >I'm Dhiraj Garad and I'm a <span    style={{ color: '#F08080', fontWeight: 'bold',marginLeft:'10px' }}>
+    {/*style={{width:'930px',marginLeft:'700px',marginTop:'200px'}}*/}
+    <Box w='930'  ml={{lg:"650px",md:"500px",sm:"260px"}} mt={{lg:"200",sm:"80px"}}>
+    <Text   fontSize={{lg:"22px",md:"12px",sm:"9px"}} lineHeight='24px' marginBottom='28px' textAlign="left" marginRight='100' color='black' fontWeight='bold' fontFamily='sans-serif' height='2'  >I'm Dhiraj Garad and I'm a <span    style={{ color: '#F08080', fontWeight: 'bold',marginLeft:'10px' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={[ 'Full-Stack Web Developer','Problem Solver', 'Coder']}
@@ -186,23 +237,23 @@ function skilClick (e){
             delaySpeed={1000}
            
           />
-        </span> </p>
+        </span> </Text>
         
-        <p style={{letterSpacing:'1px',fontStyle:"inherit", fontSize:'21px',marginRight:'140px',marginTop:'0px',textAlign:'justify'}}>
+        <Text letterSpacing='1px' fontStyle="inherit"  fontSize={{lg:"18px",md:"12px",sm:"8px"}} marginRight='140px' marginTop={{lg:"0px",md:"-8px",sm:"-10px"}} textAlign='justify'>
         A Self-motivated aspiring Full-Stack Web  Developer 
         with 1200 plus hours of coding experience,Dedicated to developing robust 
         applications that interact with the Frontend as well as backend part of web applications Proficient 
         in creating user-friendly and ready-to-use code. Love to work in a team
-        </p>
+        </Text>
         
         
         
         
-        </div>
+        </Box>
 
 
 
-    </div>
+   </Box>
 
 
 
@@ -233,7 +284,7 @@ function skilClick (e){
     <Box w='470px' h='60' bg='red.500' ml='5'>
 
 
-
+    
 
     </Box>
     <Spacer />
@@ -269,51 +320,51 @@ function skilClick (e){
 <section  className='skills'>
 
 
-<Text  color={'black'} fontSize='6xl' mt='12' >My Skills</Text>
+<Text  color={'black'} fontSize={{lg:"6xl",md:"4xl",sm:"2xl"}} mt='12' >My Skills</Text>
 
 
 <SimpleGrid mt={'24'} columns={4} spacing={0}>
  
-    <Image src={js} mt='3'  alt='Dan Abramov'   boxSize='140px'
+    <Image src={js} mt='3'  alt='Dan Abramov'   boxSize={{lg:"120px",md:"80px",sm:"80px"}} ml={{sm:"40px"}}
     objectFit='cover'/>
 
-     <Image src={html}   alt='Dan Abramov' ml='10'  boxSize='140px'
+     <Image src={html}   alt='Dan Abramov' ml='10' mt={{sm:"6px"}} boxSize={{lg:"120px",md:"80px",sm:"80px"}} 
     objectFit='cover'/> 
-  <Image src={css}   alt='Dan Abramov'   boxSize='140px'
+  <Image src={css}   alt='Dan Abramov'   boxSize={{lg:"120px",md:"80px",sm:"90px"}} 
     objectFit='cover'/>
 
 
- <Image src={chakra}   alt='Dan Abramov'   boxSize='140px' w='140' 
+ <Image src={chakra}   alt='Dan Abramov'   boxSize={{lg:"120px",md:"80px"}}  w={{lg:"280px",md:"200px",sm:"200px"}} mt={{sm:"30px",md:"4px"}} 
     />
 
-<Image src={react} ml='3' mt='20' alt='Dan Abramov'   boxSize='140px' w='90'
+<Image src={react} ml='3' mt='20' alt='Dan Abramov'   boxSize={{lg:"120px",md:"110px",sm:"100px"}}  w={{lg:"190px",sm:"120px"}}
     />
 
-<Image src={redux} ml='18' mt='20' alt='Dan Abramov'   boxSize='140px' w='90'
+<Image src={redux} ml='18' mt='20' alt='Dan Abramov'   boxSize={{lg:"120px",md:"110px",sm:"100px"}}  w={{lg:"190px",sm:"120px"}}
 
     />
 
-<Image src={next} ml='-8' mt='20' alt='Dan Abramov'   boxSize='140px' w='90'
+<Image src={next} ml={{lg:'-8',sm:"8px"}} mt={{lg:'20',sm:"90px"}} alt='Dan Abramov'   boxSize={{lg:"120px",md:"110px",sm:"80px"}} w={{lg:"190px",sm:"140px"}}
 
 />
 
-<Image src={type} ml='5' mt='24'  alt='Dan Abramov'    w='xl' boxSize='140px'
+<Image src={type} ml={{lg:'5',sm:"30px"}} mt='24'  alt='Dan Abramov'   w={{lg:"390px"}} boxSize={{lg:"120px",md:"90px",sm:"70px"}} 
 
 />
 
-<Image src={tailwind}   mt='28' alt='Dan Abramov'   boxSize='150px' w='90' ml='-5'
+<Image src={tailwind}   mt='62px' alt='Dan Abramov'   boxSize={{lg:"120px",md:"110px"}}  w={{lg:"290px",md:"180px",sm:"220px"}} ml='-5'
 
 />
 
-<Image src={node}   mt='28' alt='Dan Abramov'   boxSize='140px' w='80' 
+<Image src={node}   mt={{lg:'62px',md:"85px",sm:"70px"}} alt='Dan Abramov'   boxSize={{lg:"120px",md:"60px",sm:"70px"}}  w={{lg:"200px",md:"120px",sm:"120px"}}
 
 />
 
-<Image src={express}   mt='28' alt='Dan Abramov'   boxSize='150px' w='120' 
+<Image src={express}   mt={{lg:'62px',md:"70px",sm:"70px"}}   alt='Dan Abramov'   boxSize={{lg:"120px",md:"100px",sm:"80px"}}  w={{lg:'300px',md:"250px",sm:"300px"}} 
 
 />
 
-<Image src={mongo}   mt='28' alt='Dan Abramov'   boxSize='130px' w='100' 
+<Image src={mongo}   mt={{lg:'60px',md:"70px",sm:"80px"}}  alt='Dan Abramov'   boxSize={{lg:"120px",md:"80px"}}  w={{lg:'250px',md:"200px"}}
 
 />
  
@@ -335,6 +386,164 @@ function skilClick (e){
 
 
 
+
+
+
+
+
+
+{/* Project start here*/}
+
+
+
+
+<Box w='1400' h='800' background={'black'} mt='20' backgroundSize={'cover'}  backgroundAttachment={'fixed'} backgroundImage={"https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdvcmt8ZW58MHx8MHx8&w=1000&q=80"}>
+
+<section className='project'>
+
+
+<Text  color={'black'} fontSize='8xl' pt='12' > Projects</Text>
+
+
+
+
+<Grid templateColumns='repeat(3, 1fr)' gap={2}  mt='16' ml='20'>
+  <GridItem w='90%' h='550' borderColor={'black'} border={'4px'} borderRadius='8'>
+
+   <Image  src={img1}  alt='Dan Abramov'   boxSize='470px'/>
+   <Text color={'red.400'} fontSize='4xl'> Bewakoof</Text>
+
+  </GridItem>
+ 
+ 
+ 
+  <GridItem w='90%' h='550' borderColor={'black'} border={'4px'} borderRadius='8'/>
+  <GridItem w='90%' h='550' borderColor={'black'} border={'4px'} borderRadius='8'/>
+  
+</Grid>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+</Box>
+
+
+
+
+
+
+
+
+{/*    contact section start here       */}
+
+
+<Box w='1400' h='800'>
+
+<section>
+
+
+
+
+
+
+
+
+<Text  color={'black'} fontSize={{lg:"6xl",md:"4xl",sm:"2xl"}} mt='12' >Contact Me</Text>
+
+
+
+<Grid templateColumns='repeat(2, 1fr)' gap={6} mt='90px' ml='20px'>
+  <GridItem w='90%' h='500'  >
+
+<Text ml='-230px' fontSize={"20px"} fontFamily="sans-serif" fontWeight={'bold'}>Get in Touch</Text>
+
+<Text ml='118px' mt="47px" textAlign='justify' fontSize={"15px"} fontWeight={'bold'}>Got a project? Reach out and let's work together on something exciting. Big or small. Mobile or web.</Text>
+
+
+<HStack spacing='24px' ml='90px' mt='40px'>
+    <Box w='40px' h='10' ml='27px'  ><MdEmail size={"30px"}/></Box>
+    <Box w='200px' h='10'  ><Text fontWeight={'bold'}>dhirajgarad46@gmail.com</Text></Box>
+    
+  </HStack>
+
+
+  <HStack spacing='48px' ml='90px' mt='20px'>
+    <Box w='20px' h='10'  ml='25px'  ><Link href='https://www.linkedin.com/in/dhiraj-garad-b1895521b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZpB7JjoLRqeZ6udHwJMXow%3D%3D' ><FaLinkedin size={"30px"}/></Link></Box>
+    <Box w='200px' h='10' ml='37px' ><Link ml="-125px" href='https://www.linkedin.com/in/dhiraj-garad-b1895521b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZpB7JjoLRqeZ6udHwJMXow%3D%3D' fontWeight={'bold'}>Linkedin</Link></Box>
+    
+  </HStack>
+
+
+
+
+
+
+  <HStack spacing='48px' ml='90px' mt='20px'>
+    <Box w='20px' h='10'  ml='25px'  ><Link href='https://github.com/dhiraj19999'><FaGithub  size={'30px'}/></Link></Box>
+    <Box w='200px' h='10'  ml='40px' ><Link  href='https://github.com/dhiraj19999'  ml="-138px" fontWeight={'bold'}>Github</Link></Box>
+    
+  </HStack>
+
+
+
+
+
+  <HStack spacing='48px' ml='90px' mt='20px'>
+    <Box w='20px' h='10'  ml='25px'  ><Link ><IoMdCall size={"30px"}/></Link></Box>
+    <Box w='200px' h='10'  ml='40px' ><Text ml="-70px" fontWeight={'bold'}>+91 8459116231</Text></Box>
+    
+  </HStack>
+
+
+
+
+
+
+
+  </GridItem>
+  <GridItem w='90%' h='500' >
+
+
+<Text fontSize={"20px"} fontFamily="sans-serif" fontWeight={'bold'}>Message me</Text>
+
+<Input onChange={(e)=>setName(e.target.value)}  value={name}  focusBorderColor='red.300' mt='20px'  _placeholder={{ color: 'red.300',margin:"auto" }} borderColor={'black'} placeholder='Name' w={'340px'} />
+
+
+<Input onChange={(e)=>setEmail(e.target.value)} value={email} focusBorderColor='red.300' mt='20px'  _placeholder={{ color: 'red.300',margin:"auto" }} borderColor={'black'} placeholder='Email' w={'340px'} />
+
+<Input focusBorderColor='red.300' mt='20px'  _placeholder={{ color: 'red.300',margin:"auto" }} borderColor={'black'} placeholder='Subject' w={'340px'} />
+
+
+<Input onChange={(e)=>setMessage(e.target.value)} value={message} focusBorderColor='red.300' mt='20px'  _placeholder={{ color: 'red.300',marginBottom:'200px' }} borderColor={'black'} placeholder='Message' h={'90px'} w={'340px'} />
+
+<Button  onClick={sendEmail} colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}} display={'block'} ml='220px' mt='20px'>Send Message</Button>
+  </GridItem>
+ 
+  
+</Grid>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+</Box>
 
 
 
