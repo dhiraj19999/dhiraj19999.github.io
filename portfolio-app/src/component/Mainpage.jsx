@@ -20,6 +20,9 @@ import {FaLinkedin,FaGithub} from 'react-icons/fa'
   import {MdEmail} from 'react-icons/md'
   import emailjs from '@emailjs/browser'
 import img1 from '../Images/bewakoof.jpg'
+import img2 from '../Images/traveler.png'
+import img3 from '../Images/decan.png'
+import img4 from '../Images/my.jpg.png'
 function Mainpage() {
 const [name,setName]=useState('')
 const [email,setEmail]=useState('')
@@ -111,6 +114,20 @@ function skilClick (e){
 }
 
 
+function projectClick (e){
+  e.preventDefault()
+    document.querySelector(".project").scrollIntoView({behavior:'smooth'})
+}
+
+
+function contactClick (e){
+  e.preventDefault()
+    document.querySelector(".contact").scrollIntoView({behavior:'smooth'})
+}
+
+
+
+
 
 
 
@@ -132,8 +149,8 @@ function skilClick (e){
     <Box w='140px' h='10' mt='-1'  ><Link color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}} href='.home'  onClick={homeClick} >Home</Link></Box>
     <Box w='140px' h='10'  > <Link href='.about' onClick={haClick} color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>About</Link></Box>
     <Box w='140px' h='10'  > <Link  href='.skills' onClick={skilClick} color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Skills</Link></Box>
-    <Box w='140px' h='10'  > <Link color={'pink.200'} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Projects</Link></Box>
-    <Box w='140px' h='10'  > <Link color={'pink.200'}fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Contact</Link></Box>
+    <Box w='140px' h='10'  > <Link color={'pink.200'}  onClick={projectClick} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Projects</Link></Box>
+    <Box w='140px' h='10'  > <Link color={'pink.200'}   onClick={contactClick} fontSize={{sm:'20',md:'2xl',lg:'2xl'}}>Contact</Link></Box>
   </HStack>
 
 
@@ -220,11 +237,22 @@ function skilClick (e){
 
 
 
-    <Box style={{display:'flex'}}>
+    <Box style={{display:'flex'}} w='1400px'  h='700px' >
     
+  
+    <Image src={img4} height= '300px' 
+    width= '300px'
+    objectFit= 'fill'
+    borderRadius= '300px'
+
+ml='300px'
+mt='40px'
+   />
+     
+   
     
     {/*style={{width:'930px',marginLeft:'700px',marginTop:'200px'}}*/}
-    <Box w='930'  ml={{lg:"650px",md:"500px",sm:"260px"}} mt={{lg:"200",sm:"80px"}}>
+    <Box w='2000px'  ml={{lg:"200px",md:"500px",sm:"260px"}} mt={{lg:"200",sm:"80px"}} >
     <Text   fontSize={{lg:"22px",md:"12px",sm:"9px"}} lineHeight='24px' marginBottom='28px' textAlign="left" marginRight='100' color='black' fontWeight='bold' fontFamily='sans-serif' height='2'  >I'm Dhiraj Garad and I'm a <span    style={{ color: '#F08080', fontWeight: 'bold',marginLeft:'10px' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
@@ -397,28 +425,76 @@ function skilClick (e){
 
 
 
-<Box w='1400' h='800' background={'black'} mt='20' backgroundSize={'cover'}  backgroundAttachment={'fixed'} backgroundImage={"https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdvcmt8ZW58MHx8MHx8&w=1000&q=80"}>
+<Box w='1400' h='1000' background={'black'} mt='20' backgroundSize={'cover'}  >
 
 <section className='project'>
 
 
-<Text  color={'black'} fontSize='8xl' pt='12' > Projects</Text>
+<Text  color={'white'} fontSize='8xl' pt='8' > Projects</Text>
 
 
 
 
-<Grid templateColumns='repeat(3, 1fr)' gap={2}  mt='16' ml='20'>
-  <GridItem w='90%' h='550' borderColor={'black'} border={'4px'} borderRadius='8'>
+<Grid templateColumns='repeat(3, 1fr)' gap={0}  mt='20' ml='20'>
+  <GridItem w='100%' h='650' ml='-14'   border={'4px solid hsl(336deg 100% 50%)'} borderRadius='8'  >
+  <Box mt='50px' ml='40px' w='340px' h='320px' border={'5px solid teal'} borderRadius='6px'>
+   <Image   src={img1}  alt='Dan Abramov'   boxSize='400px' h='310px'/>
+   </Box>
+   
+   <Text color={'white'} fontSize='4xl' mt='20px'> Bewakoof</Text>
 
-   <Image  src={img1}  alt='Dan Abramov'   boxSize='470px'/>
-   <Text color={'red.400'} fontSize='4xl'> Bewakoof</Text>
+   <Text color={'white'} >Cloned Bewakoof which is an e-commerce website for clothes and beauty products</Text>
 
+
+<Text mt='6' color={'white'}>  Tech Used: HTML, CSS,JavaScript</Text>
+
+<Button mt='30px' ml='-30px' colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}}>Git Repo</Button>  <Button  ml='30px' mt='30px' colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}}>Live Site</Button>
   </GridItem>
  
  
  
-  <GridItem w='90%' h='550' borderColor={'black'} border={'4px'} borderRadius='8'/>
-  <GridItem w='90%' h='550' borderColor={'black'} border={'4px'} borderRadius='8'/>
+  <GridItem w='100%' h='650' ml='-10' border={'4px solid hsl(336deg 100% 50%)'} borderRadius='8'  >
+
+  <Box mt='50px' ml='40px' w='340px' h='320px' border={'5px solid teal'} borderRadius='6px'>
+  <Image  src={img2}  alt='Dan Abramov'   boxSize='400px' h='309px' />
+</Box>
+  <Text color={'white'} fontSize='4xl' mt='20px'> Mr Traveler</Text>
+
+<Text color={'white'} >Mr.Traveler is an travel advisory website for hotel
+booking, flight booking and reviews of places</Text>
+
+
+<Text mt='6' color={'white'}>  Tech Used: React, CSS, Chakra-UI, React-Icon, api</Text>
+
+<Button mt='34px' ml='-30px' colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}}>Git Repo</Button>  <Button  ml='30px' mt='34px' colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}}>Live Site</Button>
+
+  </GridItem>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <GridItem w='100%' h='650' ml='-6' border={'4px solid hsl(336deg 100% 50%)'} borderRadius='8'>
+<Box mt='50px' ml='40px' w='340px' h='320px' border={'5px solid teal'} borderRadius='6px'>
+  <Image   src={img3}  alt='Dan Abramov'   boxSize='400px' h='308px' />
+  </Box>
+
+  <Text color={'white'} fontSize='4xl' mt='20px'> Deccan Chronicals</Text>
+
+<Text color={'white'} >Deccan Chronicals clone is an E-news website where you can read news from all over the world</Text>
+
+
+<Text mt='6' color={'white'}>  Tech Used: HTML, CSS, JavaScript</Text>
+
+<Button mt='34px' ml='-30px' colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}}>Git Repo</Button>  <Button  ml='30px' mt='34px' colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}}>Live Site</Button>
+
+
+  </GridItem>
   
 </Grid>
 
@@ -447,7 +523,7 @@ function skilClick (e){
 
 <Box w='1400' h='800'>
 
-<section>
+<section className='contact'>
 
 
 
