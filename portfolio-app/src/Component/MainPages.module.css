@@ -1,0 +1,229 @@
+@media all and (min-width:965px) and (max-width:1075px){
+    .sec{
+       width: 90px;
+    }
+
+    .text{
+        font-size:18px ;
+    }
+
+    .grid{
+
+        display: grid;
+        grid-template-columns:repeat(3,auto);
+        height: auto;
+    }
+
+
+
+    .fir{
+        font-size: 28px;
+        margin-top: 4px;
+        margin-left: -300px;
+    }
+    .second{
+        margin-left: -90px;
+    }
+
+   
+  }
+  
+  @media all and (min-width:747px) and (max-width:965px){
+    .text{
+        font-size:15px ;
+    }
+
+   
+    .sec{
+        width: 90px;
+     }
+
+     .fir{
+        font-size: 24px;
+        margin-top: 8px;
+        margin-left: -370px;
+    }
+    .second{
+        margin-left: -340px;
+    }
+
+.full{
+    font-size: 30px;
+}
+.hello{
+   font-size: 30px; 
+}
+
+.but{
+    width: 110px;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+  }
+
+
+
+
+  @media all and (min-width:594px) and (max-width:746px){
+
+
+    .text{
+        font-size:12px ;
+    }
+    
+
+    .sec{
+        width: 80px;
+     }
+
+     .fir{
+        font-size: 22px;
+        margin-top: 12px;
+        margin-left: -390px;
+    }
+    .second{
+        margin-left: -440px;
+    }
+
+    .full{
+        font-size: 20px;
+    }
+    .hello{
+       font-size: 17px; 
+    }
+    
+    .but{
+        width: 60px;
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+    .resname{
+        font-size: 15px;
+    }
+
+  }
+
+
+
+
+
+
+  @media all and (min-width:320px) and (max-width:594px){
+
+
+    .text{
+        font-size:6px ;
+    }
+
+    .sec{
+        width: 40px;
+     }
+
+     .fir{
+        font-size: 10px;
+        margin-top: -6px;
+        margin-left: -470px;
+    }
+    .second{
+        margin-left: -530px;
+        margin-top: -6px;
+    }
+
+    
+    .full{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .hello{
+       font-size: 10px;
+       margin-top: -220px; 
+       margin-left: -40px;
+    }
+    
+    .but{
+        width: 40px;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+    .resname{
+        font-size: 8px;
+    }
+    
+    .nav{
+        
+        height: 20px;
+    }
+
+}
+
+
+
+.skill{
+    
+    box-shadow: rgb(255 86 34) 0px 5px 15px;
+}
+
+.css{
+    box-shadow: rgb(0 212 242) 0px 5px 15px;
+}
+
+.js{
+    box-shadow: rgb(255 214 0) 0px 5px 15px
+}
+
+.react{
+    box-shadow: rgb(1 122 254) 0px 5px 15px;
+    
+    
+}
+.tailwind{
+    box-shadow: rgb(1 122 254) 0px 5px 15px;
+}
+.github{
+    box-shadow: rgb(251 252 255) 0px 5px 15px;
+}
+.git{
+    box-shadow: rgb(240 80 51) 0px 5px 15px;
+}
+.chakra{
+    box-shadow: rgb(108 202 206) 0px 5px 15px;
+}
+
+.redux{
+    box-shadow: rgb(118 74 188) 0px 5px 15px;
+}
+
+.express{
+    box-shadow: rgb(57 39 163) 0px 5px 15px;
+}
+.mongo{
+    box-shadow: rgb(19 170 82) 0px 5px 15px;
+}
+.mongoos{
+    box-shadow: rgb(137 0 0) 0px 5px 15px;
+}
+
+.type{
+    box-shadow: rgb(0 122 204) 0px 5px 15px;
+}
+
+.json{
+    box-shadow: rgb(151 119 168) 0px 5px 15px;
+}
+.npm{
+    box-shadow: rgb(193 33 39) 0px 5px 15px;
+}
+.vercel{
+    box-shadow: rgb(255 255 255) 0px 5px 15px;
+}
+
+.netlify{
+    box-shadow: rgb(37 199 183) 0px 5px 15px;
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    height: auto;
+}

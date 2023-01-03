@@ -1,0 +1,98 @@
+@media all and (min-width:980px) and (max-width:600x){
+    
+ .navbre{
+    position: fixed;
+
+ }
+
+
+  
+ .gr{
+    margin-left: 120px;
+     
+    }
+
+
+.front{
+
+    font-size: 6px;
+}
+
+
+
+  }
+  
+ 
+  
+   
+    
+
+
+
+
+    
+
+
+ 
+.gr{
+    margin-left: 220px;
+        display: grid;
+        grid-template-columns: repeat(3,250px);
+       
+        gap: 50px;
+    }
+
+
+
+.html{
+    box-shadow: rgb(255 86 34) 0px 5px 15px;
+}
+
+
+.css{
+    box-shadow:   rgb(0 212 242) 0px 5px 15px;
+}
+
+.js{
+    box-shadow: rgb(255 214 0) 0px 5px 15px;
+}
+
+.react{
+    box-shadow: rgb(1 122 254) 0px 5px 15px
+}
+
+.tail{
+    box-shadow: rgb(1 122 254) 0px 5px 15px;
+}
+.github{
+    box-shadow: rgb(251 252 255) 0px 5px 15px
+}
+
+.git{
+    box-shadow: rgb(240 80 51) 0px 5px 15px
+}
+
+.chakra{
+    box-shadow: rgb(108 202 206) 0px 5px 15px
+}
+
+
+.node{
+    box-shadow: rgb(19 170 82) 0px 5px 15px
+}
+
+
+.db{
+    box-shadow: rgb(19 170 82) 0px 5px 15px
+}
+
+.express{
+    box-shadow: rgb(57 39 163) 0px 5px 15px
+}
+
+.mongos{
+    box-shadow: rgb(137 0 0) 0px 5px 15px
+}
+
+
+
