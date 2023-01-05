@@ -17,7 +17,7 @@ import {
   import { DownloadIcon } from "@chakra-ui/icons";
   import ColorModeToggle from './ColorModeToggle';
   import Home from '../Pages/Home';
- import Skills from '../Componentst/Skills';
+ 
  import Newservices from '../Pages/Newservice';
 //   import About from '../Pages/About';
 import About from '../Componentst/Anoth';
@@ -25,6 +25,7 @@ import About from '../Componentst/Anoth';
   import Contact from '../Pages/Contact';
   import styles from '../Componentst/MainPa.module.css'
 import Experi from '../Pages/Experi';
+import NewSkills from '../Pages/Newskills';
   const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
   
   const NavLink = ({children}) => (
@@ -178,6 +179,7 @@ import Experi from '../Pages/Experi';
          {/* <Skills/> */}
         {/* <Contact/> */}
         <Experi/>
+        <NewSkills/>
         </Box>
       </>
     );
