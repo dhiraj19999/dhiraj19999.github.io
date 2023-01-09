@@ -14,6 +14,7 @@ import {
     Text
   } from '@chakra-ui/react';
   import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+  import Sli from '../Pages/Slider';
   import { DownloadIcon } from "@chakra-ui/icons";
   import ColorModeToggle from './ColorModeToggle';
   import Home from '../Pages/Home';
@@ -26,6 +27,7 @@ import About from '../Componentst/Anoth';
   import styles from '../Componentst/MainPa.module.css'
 import Experi from '../Pages/Experi';
 import NewSkills from '../Pages/Newskills';
+import Project from '../Pages/Project';
   const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
   
   const NavLink = ({children}) => (
@@ -37,7 +39,7 @@ import NewSkills from '../Pages/Newskills';
       rounded={'md'}
       _hover={{
         textDecoration: 'none',
-        bg: useColorModeValue('red.200', 'red.700'),
+        bg: useColorModeValue('red.300', 'red.700'),
       }}
       href={'#'}>
       {children}
@@ -179,7 +181,9 @@ import NewSkills from '../Pages/Newskills';
          {/* <Skills/> */}
         {/* <Contact/> */}
         <Experi/>
+        <Project/>
         <NewSkills/>
+       
         </Box>
       </>
     );

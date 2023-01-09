@@ -14,7 +14,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import styles from '../Componentst/MainPa.module.css'
- 
+ import img1 from '../Images/profile.png'
   import { DownloadIcon } from "@chakra-ui/icons";
   
   export default function Home() {
@@ -119,11 +119,12 @@ import {
                 // position={'ralative'}
               
                 alt={'Hero Image'}
-                fit={'cover'}
+                
                 align={'center'}
                 w={'100%'}
-                h={'100%'}
-                src={'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80'}
+                h={'160%'}
+                mt='-40px'
+                src={img1}
               />
             </Box>
           </Flex>

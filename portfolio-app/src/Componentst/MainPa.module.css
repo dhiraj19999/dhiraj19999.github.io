@@ -51,6 +51,22 @@
 background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
 }
 
+.profirst{
+
+   
+
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+    
+}
+.profirst1{
+    box-shadow:  0px 50px 100px -20px, rgba(255 86 34) 0px 30px 60px -30px, rgba(255 86 34) 0px -2px 6px 0px inset;
+
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+}
+
+
+
+
 .html:hover{
     background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
     transform: scale(1.2);
