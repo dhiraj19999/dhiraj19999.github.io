@@ -54,12 +54,12 @@ function NewSkills(){
    
     return(
 
-        <Box h='900px' mt={{lg:"400px",md:"900px",sm:"900px",base:"900px"}}>
+        <Box h='900px' mt={{lg:"160px",md:"160px",sm:"160px",base:"100px"}}>
  <Heading
  mb='100px'
            ml='10px'
             fontWeight={700}
-            fontSize={{ base: '1xl', sm: '3xl', md: '3xl',lg:"4xl" }}
+            fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }}
             lineHeight={'110%'}>
             My Skills
           </Heading>

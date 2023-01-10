@@ -11,6 +11,7 @@ import {
     useDisclosure,
     useColorModeValue,
     Stack,
+    Image,
     Text
   } from '@chakra-ui/react';
   import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
@@ -18,6 +19,7 @@ import {
   import { DownloadIcon } from "@chakra-ui/icons";
   import ColorModeToggle from './ColorModeToggle';
   import Home from '../Pages/Home';
+  import Stat from '../Pages/Stat';
  
  import Newservices from '../Pages/Newservice';
 //   import About from '../Pages/About';
@@ -182,8 +184,25 @@ import Project from '../Pages/Project';
         {/* <Contact/> */}
         <Experi/>
         <Project/>
+        <Stat/>
         <NewSkills/>
        
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
         </Box>
       </>
     );
