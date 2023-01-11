@@ -101,6 +101,15 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 1
 
 }
 
+
+.pro3{
+    box-shadow:  0px 50px 100px -20px, rgba(255 86 34) 0px 30px 60px -30px, rgba(255 86 34) 0px -2px 6px 0px inset;
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+ 
+}
+
+
+
 .react:hover{
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     transform: scale(1.2);
