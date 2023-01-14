@@ -5,6 +5,7 @@
   import { Image,Text,Box } from "@chakra-ui/react"
   import { Heading } from "@chakra-ui/react"
   import styles from '../Componentst/MainPa.module.css'
+  import { SimpleGrid } from "@chakra-ui/react"
 function NewSkills(){
    
    
@@ -64,16 +65,16 @@ function NewSkills(){
             My Skills
           </Heading>
 
-<Wrap  spacing='30px' justify='center'>
+<Wrap  spacing='60px' justify='center' >
 
+<SimpleGrid columns={{lg:3,md:3,sm:2,base:1,xl:4}} spacing='20px'>
 
-
-<WrapItem   className={styles.html} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.html} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}    style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={html}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>HTML</Text>
+<Image src={html}  w='90px' mt='20px'ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>HTML</Text>
 </Center>
 
 
@@ -87,12 +88,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.html} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.html} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={css}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>CSS</Text>
+<Image src={css}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>CSS</Text>
 </Center>
 
 
@@ -105,12 +106,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.html} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.html} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px"}}   style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={js}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>JavaScript</Text>
+<Image src={js}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>JavaScript</Text>
 </Center>
 
 
@@ -123,96 +124,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.html} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.html}  width={{lg:"240px",md:"240px",xl:"240px",sm:"220px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={react}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>React</Text>
-</Center>
-
-
-
-
-</WrapItem>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<WrapItem   className={styles.css} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={tailwin}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='2px' ml='95px'>TawilWind</Text>
-</Center>
-
-
-
-
-</WrapItem>
-
-
-
-
-
-
-
-<WrapItem   className={styles.css} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={github}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>Github</Text>
-</Center>
-
-
-
-
-</WrapItem>
-
-
-
-
-
-
-<WrapItem   className={styles.css} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={chakra}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>Chakra UI</Text>
-</Center>
-
-
-
-
-</WrapItem>
-
-
-
-
-
-
-<WrapItem   className={styles.css} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={git}  w='90px' mt='20px' ml='100px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='65px'>Git</Text>
+<Image src={react}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>React</Text>
 </Center>
 
 
@@ -236,13 +153,12 @@ function NewSkills(){
 
 
 
-
-<WrapItem   className={styles.js} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.css} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={node}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='6px' ml='95px'>Node JS</Text>
+<Image src={tailwin}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='2px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>TawilWind</Text>
 </Center>
 
 
@@ -256,12 +172,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.js} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.css} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={db}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>Mongo DB</Text>
+<Image src={github}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Github</Text>
 </Center>
 
 
@@ -274,12 +190,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.js} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.css} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={express}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>Express JS</Text>
+<Image src={chakra}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Chakra UI</Text>
 </Center>
 
 
@@ -292,12 +208,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.js} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.css} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={mongos}  w='90px' mt='20px' ml='100px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='105px'>Mongoos</Text>
+<Image src={git}  w='90px' mt='20px' ml={{xl:"100px",lg:"100px",md:"100px",sm:"84px",base:"105px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"65px",xl:"64px",lg:"64px",md:"64px",sm:"45px"}}>Git</Text>
 </Center>
 
 
@@ -322,19 +238,12 @@ function NewSkills(){
 
 
 
-
-
-
-
-
-
-
-<WrapItem   className={styles.react} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.js} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={type}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='6px' ml='95px'>TypeScript</Text>
+<Image src={node}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='6px' ml={{base:"88px",xl:"80px",lg:"80px",md:"80px",sm:"70px"}}>Node JS</Text>
 </Center>
 
 
@@ -348,12 +257,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.react} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.js} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={next}  w='90px' mt='45px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='14px' ml='95px'>Next JS</Text>
+<Image src={db}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Mongo DB</Text>
 </Center>
 
 
@@ -366,12 +275,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.react} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.js} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={redux}  w='90px' mt='20px' ml='90px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='95px'>Redux</Text>
+<Image src={express}  w='90px' mt='20px'ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Express JS</Text>
 </Center>
 
 
@@ -384,12 +293,12 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.react} style={{width:"270px",height:"160px",borderRadius:"6px"}}>
+<WrapItem   className={styles.js} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
 
 <Center display={'block'} >
 
-<Image src={boot}  w='90px' mt='35px' ml='100px'/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml='105px'>BootStrap</Text>
+<Image src={mongos}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px'ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Mongoos</Text>
 </Center>
 
 
@@ -419,6 +328,98 @@ function NewSkills(){
 
 
 
+
+
+<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
+
+<Center display={'block'} >
+
+<Image src={type}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='6px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>TypeScript</Text>
+</Center>
+
+
+
+
+</WrapItem>
+
+
+
+
+
+
+
+<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
+
+<Center display={'block'} >
+
+<Image src={next}  w='90px' mt='45px'  ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='14px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Next JS</Text>
+</Center>
+
+
+
+
+</WrapItem>
+
+
+
+
+
+
+<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
+
+<Center display={'block'} >
+
+<Image src={redux}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Redux</Text>
+</Center>
+
+
+
+
+</WrapItem>
+
+
+
+
+
+
+<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
+
+<Center display={'block'} >
+
+<Image src={boot}  w='90px' mt='35px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>BootStrap</Text>
+</Center>
+
+
+
+
+</WrapItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</SimpleGrid>
 
 
 

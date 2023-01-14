@@ -30,6 +30,7 @@ import About from '../Componentst/Anoth';
 import Experi from '../Pages/Experi';
 import NewSkills from '../Pages/Newskills';
 import Project from '../Pages/Project';
+import NewContact from '../Pages/NewContact';
   const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
   
   const NavLink = ({children}) => (
@@ -187,7 +188,7 @@ import Project from '../Pages/Project';
         <Stat/>
         <NewSkills/>
        
-
+       <NewContact/>
 
 
 
