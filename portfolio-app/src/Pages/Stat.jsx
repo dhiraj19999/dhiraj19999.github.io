@@ -10,18 +10,16 @@ function Stat(){
 
     <Center display='block'>
   
-    <Text fontWeight={'bold'} fontSize='34px'  >  # 📊 GitHub Stats:</Text>
+    <Text fontWeight={'bold'} fontSize='34px' mb='40px' >  # 📊 GitHub Stats:</Text>
 
-<Image mt='90px' src='https://github-readme-stats.vercel.app/api?username=dhiraj19999&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true'/>
-
-
-<Image mt='15px' src='https://github-readme-streak-stats.herokuapp.com/?user=dhiraj19999&theme=midnight-purple&hide_border=true'/>
-
-<Image mt='15px' src='https://github-readme-stats.vercel.app/api/top-langs/?username=dhiraj19999&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true&layout=compact'/>
+<Image mt='120px' m='auto' src='https://github-readme-stats.vercel.app/api?username=dhiraj19999&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true'/>
 
 
+<Image m='15px auto auto auto ' src='https://github-readme-streak-stats.herokuapp.com/?user=dhiraj19999&theme=midnight-purple&hide_border=true&locale=en'/>
 
- 
+<Image m='15px auto auto auto '  src='https://github-readme-stats.vercel.app/api/top-langs/?username=dhiraj19999&theme=midnight-purple&hide_border=true&include_all_commits=true&count_private=true&layout=compact'/>
+
+
     </Center>
 </WrapItem>
 

@@ -21,7 +21,7 @@ import {
   import Home from '../Pages/Home';
   import Stat from '../Pages/Stat';
   import SmallWithLogoLeft from '../Pages/Footer';
-  
+  import Github from '../Pages/Git';
  import Aos from 'aos';
 
 //   import About from '../Pages/About';
@@ -214,6 +214,7 @@ import NewContact from '../Pages/NewContact';
 
 </section>
 <Stat/>
+<Github/>
 <section className='skills'>
 <NewSkills/>
 </section>

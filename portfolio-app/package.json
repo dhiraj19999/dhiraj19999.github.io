@@ -1,4 +1,4 @@
-{
+{"homepage": "https://dhiraj19999.github.io",
   "name": "portfolio-app",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +17,8 @@
     "framer-motion": "^8.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.4.0",
+    "react-github-contribution-calendar": "^2.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
@@ -24,6 +26,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
