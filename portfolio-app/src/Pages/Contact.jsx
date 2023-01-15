@@ -56,7 +56,7 @@ function Contact (){
 return(
 
     <div>
-    <Box pos='relative' ml="-52px" w='1399px' h='800'>
+    <Box  ml="-52px" w='1399px' h='800' border="1px solid red">
     <Image  width={'2000px'} height='auto' src='https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1420&q=80'/>
 
 
@@ -121,6 +121,10 @@ return(
 
 
 </GridItem>
+
+
+
+
 <GridItem w='90%' h='500' >
 
 
