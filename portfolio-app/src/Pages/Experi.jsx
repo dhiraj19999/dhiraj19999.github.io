@@ -7,7 +7,7 @@ function Experi(){
 
     return(
         <Box>
-             <Text   fontWeight={700} fontSize={{ base: '1xl', sm: '3xl', md: '3xl',lg:"4xl" }} mt='-100px' pb={'90px'}  >My Services</Text>
+             <Text   fontWeight={700} fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }}mt='-100px' pb={'90px'}  >My Services</Text>
         <Wrap spacing='30px' justify='center'>
            
   <WrapItem>

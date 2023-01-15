@@ -13,7 +13,7 @@ function About(){
  
  <section className='about'>
  
- <Text  color={'black'} fontSize='6xl' pt={'100'}  >About Me</Text>
+ <Text  color={'black'} fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }} pt={'100'}  >About  </Text>
 
 
 

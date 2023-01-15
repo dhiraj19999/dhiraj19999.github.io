@@ -61,7 +61,7 @@ function  NewContact(){
 
     return(
      
-<Box borderRadius={'10px'} background="#DCDCDC" margin="auto" w={{xl:"800px",lg:"870px",md:"730px",sm:"430px",base:"300px"}} h={{xl:"430px",lg:"430px",md:"430px"}} mt={{lg:"340px",xl:"30px",md:"340px",sm:"700px",base:"2150px"}}   className="profirst4"  >
+<Box borderRadius={'10px'} background="#E6E6FA" margin="auto" w={{xl:"800px",lg:"870px",md:"730px",sm:"430px",base:"300px"}} h={{xl:"430px",lg:"430px",md:"430px"}} mt={{lg:"340px",xl:"30px",md:"340px",sm:"700px",base:"2150px"}}   className="profirst4"  >
 
 
 <Wrap justify='center' >
@@ -134,15 +134,15 @@ function  NewContact(){
 
    <Text mt='-2px' fontSize={"20px"} fontFamily="sans-serif" fontWeight={'bold'} color='red.500'>Message me</Text>
 
-<Input border="2px" display="block" margin="auto" onChange={(e)=>setName(e.target.value)}  value={name}  focusBorderColor='teal.300' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}}  _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Name' w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
+<Input position={''}   border="2px" display="block" margin="auto" onChange={(e)=>setName(e.target.value)}  value={name}  focusBorderColor='teal.300' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}}  _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Name' w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
 
-<Input border="2px" display="block" margin="auto" onChange={(e)=>setEmail(e.target.value)}  value={email}  focusBorderColor='tomato' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}} _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Email'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
-
-
-<Input value={sub} border="2px" display="block" margin="auto"  focusBorderColor='orange.400' mt={{sm:"30px",xl:"23px",lg:"23px",base:"30px",md:"23px"}}  _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Subject'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}}/>
+<Input position={''}   border="2px" display="block" margin="auto" onChange={(e)=>setEmail(e.target.value)}  value={email}  focusBorderColor='tomato' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}} _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Email'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
 
 
-<Input border="2px" display="block" margin="auto" onChange={(e)=>setMessage(e.target.value)}  value={message}  focusBorderColor='red.300' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}} _placeholder={{ color:"black",margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Message' h='90px'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
+<Input position={''} onChange={(e)=>setSub(e.target.value)}   value={sub} border="2px" display="block" margin="auto"  focusBorderColor='orange.400' mt={{sm:"30px",xl:"23px",lg:"23px",base:"30px",md:"23px"}}  _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Subject'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}}/>
+
+
+<Input position={''}   border="2px" display="block" margin="auto" onChange={(e)=>setMessage(e.target.value)}  value={message}  focusBorderColor='red.300' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}} _placeholder={{ color:"black",margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Message' h='90px'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
 <Button  onClick={sendEmail} colorScheme={'purple'} _hover={{backgroundColor:'pink.400'}} display={'block'} ml='180px' mt='30px'>Send Message</Button>
    </Box>
 

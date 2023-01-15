@@ -12,7 +12,7 @@ import {
   export default function SmallWithLogoLeft() {
     return (
       <Box
-        bg={useColorModeValue('#DCDCDC', 'pink.300')}
+        bg={useColorModeValue('#E6E6FA', 'pink.300')}
         color={useColorModeValue("black")}
         w={{xl:"800px",lg:"870px",md:"730px",sm:"430px",base:"300px"}}
         m="auto"

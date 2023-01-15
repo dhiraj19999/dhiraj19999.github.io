@@ -37,9 +37,9 @@ import {
           <Heading
            ml='10px'
             fontWeight={700}
-            fontSize={{ base: '1xl', sm: '3xl', md: '3xl',lg:"4xl" }}
+            fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }}
             lineHeight={'110%'}>
-            About Me
+            About me
           </Heading>
             <Text color={'red.400'} fontSize={'30px'}>
             I'm Dhiraj Garad and I'm a <span  style={{ color: '#F08080', fontWeight: 'bold',marginLeft:'10px',fontSize:'30px' }}>

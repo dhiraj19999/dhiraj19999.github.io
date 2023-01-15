@@ -55,7 +55,7 @@ function NewSkills(){
    
     return(
 
-        <Box h='900px' mt={{lg:"160px",md:"160px",sm:"160px",base:"100px"}}>
+        <Box h='900px' mt={{lg:"120px",md:"160px",sm:"160px",base:"100px"}}>
  <Heading
  mb='100px'
            ml='10px'

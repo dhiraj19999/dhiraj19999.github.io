@@ -136,7 +136,7 @@ useEffect(()=>{
  mb='100px'
            ml='10px'
             fontWeight={700}
-            fontSize={{ base: '1xl', sm: '3xl', md: '3xl',lg:"4xl" }}
+            fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }}
             lineHeight={'110%'}>
             My Projects
           </Heading>

@@ -33,7 +33,7 @@ import {
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
               <Text
               
-                fontSize={'30px'}>
+              fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"5xl" }}>
                 Hello, I'm
                 </Text>  
               <Text
@@ -54,7 +54,7 @@ import {
                 Dhiraj Garad
               </Text>
               <br />
-              <Text as={'span'} color={'red.400'} fontSize={'52px'} >
+              <Text as={'span'} color={'red.400'} fontSize={{ base: '25px', sm: '4xl', md: '3xl',lg:"4xl",xl:"5xl"}}>
                 Full Stack Web Developer
               </Text>
             </Heading>
