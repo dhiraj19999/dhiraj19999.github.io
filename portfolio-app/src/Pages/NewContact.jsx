@@ -19,6 +19,7 @@ function  NewContact(){
     const [name,setName]=useState('')
     const [email,setEmail]=useState('')
     const [message,setMessage]=useState('')
+    const [sub,setSub]=useState("")
     const[tost,setTost]=useState(false)
 
     const toast=useToast()
@@ -49,7 +50,7 @@ function  NewContact(){
     setName('')
     setEmail('')
     setMessage('')
-    
+    setSub("")
     
     
     
@@ -138,7 +139,7 @@ function  NewContact(){
 <Input border="2px" display="block" margin="auto" onChange={(e)=>setEmail(e.target.value)}  value={email}  focusBorderColor='tomato' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}} _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Email'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />
 
 
-<Input border="2px" display="block" margin="auto"  focusBorderColor='orange.400' mt={{sm:"30px",xl:"23px",lg:"23px",base:"30px",md:"23px"}}  _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Subject'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}}/>
+<Input value={sub} border="2px" display="block" margin="auto"  focusBorderColor='orange.400' mt={{sm:"30px",xl:"23px",lg:"23px",base:"30px",md:"23px"}}  _placeholder={{ color: 'black',margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Subject'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}}/>
 
 
 <Input border="2px" display="block" margin="auto" onChange={(e)=>setMessage(e.target.value)}  value={message}  focusBorderColor='red.300' mt={{base:"30px",sm:"30px",xl:"23px",lg:"23px",md:"23px"}} _placeholder={{ color:"black",margin:"auto",fontWeight:"bold" }} borderColor={'teal.300'} placeholder='Message' h='90px'  w={{lg:"340px",md:"340px",sm:"340px",xl:"340px",base:"250px"}} />

@@ -15,18 +15,18 @@ import {
     Text
   } from '@chakra-ui/react';
   import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-  import Sli from '../Pages/Slider';
+  
   import { DownloadIcon } from "@chakra-ui/icons";
   import ColorModeToggle from './ColorModeToggle';
   import Home from '../Pages/Home';
   import Stat from '../Pages/Stat';
   import SmallWithLogoLeft from '../Pages/Footer';
- 
- import Newservices from '../Pages/Newservice';
+  
+ import Aos from 'aos';
+
 //   import About from '../Pages/About';
 import About from '../Componentst/Anoth';
-  import Services from '../Pages/Services';
-  import Contact from '../Pages/Contact';
+  
   import styles from '../Componentst/MainPa.module.css'
 import Experi from '../Pages/Experi';
 import NewSkills from '../Pages/Newskills';
@@ -51,7 +51,6 @@ import NewContact from '../Pages/NewContact';
   );
   
   export default function Navbar({handleHome, handleAbout, handleSkills, handleProjects, handleContacts}) {
-
 
 
   function homeClick(e){
@@ -204,12 +203,15 @@ import NewContact from '../Pages/NewContact';
 <Home/>
 </section>
 <section className='about'>
+  
 <About/>
 </section>
 <Experi/>
 
 <section className='project'>
+ 
 <Project/>
+
 </section>
 <Stat/>
 <section className='skills'>
