@@ -21,6 +21,8 @@ import tra3 from '../Images/tra3.png'
 import tra4 from '../Images/tra4.png'
 import tra5 from '../Images/tra5.png'
 import tra6 from '../Images/tra6.png'
+import Aos from 'aos'
+import { SimpleGrid } from "@chakra-ui/react"
 function Project(){
 const [count,setCount]=useState(0)
 const [count2,setCount2]=useState(0)
@@ -51,6 +53,11 @@ if(count3==6){
  
  
  let chakra="https://img.icons8.com/fluency-systems-filled/154/chakra-ui.png"
+
+ 
+ useEffect(()=>{
+    Aos.init({duration:4000});
+  },[])
  useEffect(()=>{
     const id=setInterval(()=>{
       
@@ -85,14 +92,18 @@ const id3=setInterval(()=>{
 
 },[])
 
-
+useEffect(()=>{
+    Aos.init({duration: 2000,});
+  },[])
 
 
 
 
     return(
-        <Box h='900px' mt={{lg:"150px",md:"100px",sm:"100px",base:"100px"}}>
-             <Heading
+        <Box h='900px' mt={{lg:"150px",md:"100px",sm:"100px",base:"100px"}} >
+            
+            <Heading
+
  mb='100px'
            ml='10px'
             fontWeight={700}
@@ -100,13 +111,17 @@ const id3=setInterval(()=>{
             lineHeight={'110%'}>
             My Projects
           </Heading>
+           
 <Wrap spacing='30px' justify='center'>
 
-
-
-
+<SimpleGrid spacing="30px" columns={{xl:2,lg:2,md:1,sm:1,base:1}}>
 
 <WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"640px",md:"640px",sm:"640px",base:"600px"}}>
+
+
+
+
+
 
 <Center display={'block'} >
 
@@ -137,8 +152,8 @@ My area of responsibility is to Develope Women's products page
 
 
 <Center>
-        <Button  bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  
-        <Button bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button>
+        <Button position={''}    bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  
+        <Button position={''} bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button>
     </Center>
 
 
@@ -212,8 +227,8 @@ My area of responsibility is to Develope Nation and World section
 
 
 <Center>
-        <Button bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='17px' >Live</Button>  
-        <Button bg='purple.600' w='100px' ml='30px' mt='17px'>Git</Button>
+        <Button position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='17px' >Live</Button>  
+        <Button position={''} bg='purple.600' w='100px' ml='30px' mt='17px'>Git</Button>
     </Center>
 
 
@@ -297,8 +312,8 @@ functionality are developed
 
 
 <Center>
-        <Button  bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  
-        <Button bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button>
+        <Button  position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  
+        <Button position={''} bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button>
     </Center>
 
 
@@ -371,8 +386,8 @@ My area of responsibility is to Develope Women's products page
 
 
 <Center>
-        <Button  bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  
-        <Button bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button>
+        <Button position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  
+        <Button position={''} bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button>
     </Center>
 
 
@@ -435,7 +450,7 @@ My area of responsibility is to Develope Women's products page
 
 
 
-
+</SimpleGrid>
 
 
 

@@ -20,6 +20,7 @@ import {
   import ColorModeToggle from './ColorModeToggle';
   import Home from '../Pages/Home';
   import Stat from '../Pages/Stat';
+  import SmallWithLogoLeft from '../Pages/Footer';
  
  import Newservices from '../Pages/Newservice';
 //   import About from '../Pages/About';
@@ -49,7 +50,7 @@ import NewContact from '../Pages/NewContact';
     </Link>
   );
   
-  export default function Navbar() {
+  export default function Navbar({handleHome, handleAbout, handleSkills, handleProjects, handleContacts}) {
 
 
 
@@ -130,9 +131,15 @@ import NewContact from '../Pages/NewContact';
                 as={'nav'}
                 spacing={4}
                 display={{ base: 'none', md: 'flex' }}>
-                {Links.map((link) => (
+                {/*Links.map((link) => (
                 <NavLink  key={link}>{link}</NavLink>
-                ))}
+                ))*/}
+                <div onClick={homeClick}> <NavLink>Home</NavLink></div>
+             <div onClick={haClick}>  <NavLink>About</NavLink></div>
+             
+             <div onClick={projectClick}> <NavLink>Projects</NavLink></div>
+             <div onClick={skilClick}> <NavLink>Skills</NavLink></div>
+             <div onClick={contactClick}>    <NavLink>Contacts</NavLink></div>
 
 <Button
            
@@ -168,32 +175,51 @@ import NewContact from '../Pages/NewContact';
           {isOpen ? (
             <Box pb={4} display={{ md: 'none' }}>
               <Stack as={'nav'} spacing={4}>
-                {Links.map((link) => (
+                {/*Links.map((link) => (
                   <NavLink key={link}>{link}</NavLink>
-                ))}
+                ))*/}
+
+
+<NavLink><div onClick={homeClick}>Home</div></NavLink>
+              <NavLink><div onClick={haClick}>About</div></NavLink>
+              
+              <NavLink><div onClick={projectClick}>Projects</div></NavLink>
+              <NavLink><div onClick={skilClick}>Skills</div></NavLink>
+              <NavLink><div onClick={contactClick}>Contacts</div></NavLink>
+
+
+
+
+
+
               </Stack>
             </Box>
           ) : null}
         </Box>
   
         <Box >
-          <Home />
-          <About/>
-          {/* <Newservices/> */}
-          {/* <Services/> */}
-         {/* <Skills/> */}
-        {/* <Contact/> */}
-        <Experi/>
-        <Project/>
-        <Stat/>
-        <NewSkills/>
-       
-       <NewContact/>
+         
 
+<section className='home'>
+<Home/>
+</section>
+<section className='about'>
+<About/>
+</section>
+<Experi/>
 
+<section className='project'>
+<Project/>
+</section>
+<Stat/>
+<section className='skills'>
+<NewSkills/>
+</section>
+<section className='contact'>
+<NewContact/>
+</section>
 
-
-
+<SmallWithLogoLeft/>
 
 
        
