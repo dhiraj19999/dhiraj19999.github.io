@@ -59,7 +59,7 @@ import {
               </Text>
             </Heading>
             <Text color={'black.700'}>
-            A passionate Full Web Stack Developer, love to developing scalable websites using a wide range of front-end and back-end skills  
+            A passionate Full  Stack Web Developer, love to developing scalable websites using a wide range of front-end and back-end skills  
             </Text>
             <Stack 
               spacing={{ base: 4, sm: 6 }}
