@@ -172,11 +172,11 @@ useEffect(()=>{
 
 
 <Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} 
-width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>Bewakoof is an e-commerce website for clothes,
-collaborative project of five members which is
+width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>Bewakoof is an e-commerce website for shopping clothes and various daily uses
+Individual project  which is
 completed in five days
-Login,singup and cart functionality are developed
-My area of responsibility is to Develope Women's products page
+Login,singup and cart,Men's Product page and Women's product page  functionality are developed
+
 </Text>
 
 
