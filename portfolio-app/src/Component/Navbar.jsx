@@ -139,7 +139,7 @@ import NewContact from '../Pages/NewContact';
              <div onClick={projectClick}> <NavLink>Projects</NavLink></div>
              <div onClick={skilClick}> <NavLink>Skills</NavLink></div>
              <div onClick={contactClick}>    <NavLink>Contacts</NavLink></div>
-             <div onClick={contactClick}>    <NavLink>Contacts</NavLink></div>
+             
              
 <div>
  
