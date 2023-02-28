@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a26a0222.css",
+    "main.js": "/static/js/main.2212328e.js",
+    "static/js/787.30237536.chunk.js": "/static/js/787.30237536.chunk.js",
+    "static/media/tra4.png": "/static/media/tra4.a05dd922c691c5fc18fd.png",
+    "static/media/news4.png": "/static/media/news4.c75413bd0258a39325c1.png",
+    "static/media/tra3.png": "/static/media/tra3.b953f7739542dcf9e0ba.png",
+    "static/media/tra2.png": "/static/media/tra2.64fd63282614b14e8ec9.png",
+    "static/media/men.png": "/static/media/men.823aeee9106e6a5de92c.png",
+    "static/media/news3.png": "/static/media/news3.07e4ba828f669fdb1514.png",
+    "static/media/news5.png": "/static/media/news5.bc407a0a5cb2f79f7e5c.png",
+    "static/media/tra1.png": "/static/media/tra1.efeb89904480b2b1e548.png",
+    "static/media/women.png": "/static/media/women.1539b0619988e92ffb4b.png",
+    "static/media/news1.png": "/static/media/news1.ac1536796d5019520964.png",
+    "static/media/tra5.png": "/static/media/tra5.ffaa5f5ca22ec82ef540.png",
+    "static/media/news6.png": "/static/media/news6.05f1add6dcfb41459ee0.png",
+    "static/media/news2.png": "/static/media/news2.80f1887f19183eeb1923.png",
+    "static/media/profile.png": "/static/media/profile.2e29126643a227af7eb2.png",
+    "static/media/sce1.png": "/static/media/sce1.e9f97cc3a2eeb303f399.png",
+    "static/media/Login.png": "/static/media/Login.a5a6c9492ed72730878f.png",
+    "static/media/sce2.png": "/static/media/sce2.4223a52a78ae7a50e841.png",
+    "static/media/sce4.png": "/static/media/sce4.d8b7e33e8766f3cd2a2e.png",
+    "static/media/sce3.png": "/static/media/sce3.e9669845229544e0c9ad.png",
+    "static/media/sce5.png": "/static/media/sce5.d7e3eee91fbfeded89c3.png",
+    "static/media/sce6.png": "/static/media/sce6.9b88c061407f5eb24f1a.png",
+    "static/media/tra6.png": "/static/media/tra6.a70ec7a9a03bb9d3c3f2.png",
+    "static/media/address.png": "/static/media/address.d82b10edbdda446f9ab6.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.a26a0222.css.map": "/static/css/main.a26a0222.css.map",
+    "main.2212328e.js.map": "/static/js/main.2212328e.js.map",
+    "787.30237536.chunk.js.map": "/static/js/787.30237536.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a26a0222.css",
+    "static/js/main.2212328e.js"
+  ]
+}
