@@ -32,7 +32,7 @@ import Experi from '../Pages/Experi';
 import NewSkills from '../Pages/Newskills';
 import Project from '../Pages/Project';
 import NewContact from '../Pages/NewContact';
-  const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact','Contact'];
   
   const NavLink = ({children}) => (
     <Link
@@ -139,10 +139,13 @@ import NewContact from '../Pages/NewContact';
              <div onClick={projectClick}> <NavLink>Projects</NavLink></div>
              <div onClick={skilClick}> <NavLink>Skills</NavLink></div>
              <div onClick={contactClick}>    <NavLink>Contacts</NavLink></div>
-
+             <div onClick={contactClick}>    <NavLink>Contacts</NavLink></div>
+             
+<div>
+ 
 <Button
            
-              
+            
             rounded={'full'}
             size='sm'
               fontWeight={'normal'}
@@ -151,13 +154,12 @@ import NewContact from '../Pages/NewContact';
               bg={'red.400'}
               position={''}
               _hover={{ bg: 'red.500' }}>
-              <a href="https://drive.google.com/u/0/uc?id=1nSeTIswakkmlo2y4GTr3AfwfIdbBEw0i&export=download">Resume</a>
+              <a href="https://drive.google.com/u/0/uc?id=1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy&export=download">Resume</a>
               <DownloadIcon />
             </Button>
 
-
-
-
+         
+            </div>
 
 
 
@@ -185,6 +187,25 @@ import NewContact from '../Pages/NewContact';
               <NavLink><div onClick={projectClick}>Projects</div></NavLink>
               <NavLink><div onClick={skilClick}>Skills</div></NavLink>
               <NavLink><div onClick={contactClick}>Contacts</div></NavLink>
+              <NavLink><a href="https://drive.google.com/u/0/uc?id=1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy&export=download">Resume</a></NavLink>
+
+              
+
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

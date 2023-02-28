@@ -256,7 +256,7 @@ My area of responsibility is to Develope Nation and World section
 
 
 <Center>
-      <a href='https://drive.google.com/file/d/1Xuj9_-D1HV3kJZ75SexkVlkM_JXGJMC2/view'>  <Button  _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='17px' >Live</Button> </a> 
+      <a href='https://drive.google.com/file/d/1Xuj9_-D1HV3kJZ75SexkVlkM_JXGJMC2/view'>  <Button  _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='17px' >Demo Video</Button> </a> 
      <a href='https://github.com/Ravi-047/swank-meeting-7218'>  <Button   _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml='30px' mt='17px'>Git</Button></a>
     </Center>
 
