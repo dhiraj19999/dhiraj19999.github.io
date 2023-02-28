@@ -144,7 +144,18 @@ import NewContact from '../Pages/NewContact';
 <div>
  
 <Button
-           
+     onClick={()=>{
+      window.location.href="https://drive.google.com/u/0/uc?id=1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy&export=download"
+     
+     setTimeout(()=>{
+      window.location.href="https://drive.google.com/file/d/1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy/view?usp=sharing"
+     },2000)
+     
+    
+    
+      
+    
+    }}      
             
             rounded={'full'}
             size='sm'
@@ -154,9 +165,11 @@ import NewContact from '../Pages/NewContact';
               bg={'red.400'}
               position={''}
               _hover={{ bg: 'red.500' }}>
-              <a href="https://drive.google.com/u/0/uc?id=1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy&export=download">Resume</a>
+             
               <DownloadIcon />
+              Resume
             </Button>
+
 
          
             </div>
