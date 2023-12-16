@@ -148,8 +148,8 @@ import NewContact from '../Pages/NewContact';
       window.location.href="https://drive.google.com/u/0/uc?id=1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy&export=download"
      
      setTimeout(()=>{
-      window.location.href="https://drive.google.com/file/d/1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy/view?usp=sharing"
-     },2000)
+      window.open("https://drive.google.com/file/d/1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy/view?usp=sharing",'_blank')
+     },3000)
      
     
     

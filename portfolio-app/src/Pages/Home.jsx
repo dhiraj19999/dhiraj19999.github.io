@@ -13,12 +13,18 @@ import {
     // IconProps,
     useColorModeValue,
   } from '@chakra-ui/react';
+  import { AspectRatio } from '@chakra-ui/react'
   import styles from '../Componentst/MainPa.module.css'
+  import '../App.css'
  import img1 from '../Images/profile.png'
   import { DownloadIcon } from "@chakra-ui/icons";
   
   export default function Home() {
     return (
+
+     
+
+
       <Container maxW={'7xl'}  className={styles.home}>
         <Stack
         
@@ -28,18 +34,22 @@ import {
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }} >
             <Heading
-              lineHeight={1.1}
+           
+           //lineHeight={1.1}
               fontWeight={1600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
               <Text
-              
+              marginBottom={"10px"}
+              color={"#FF1493"}
               fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"5xl" }}>
-                Hello, I'm
+              आपल्या सर्वांचे आमच्या,
                 </Text>  
               <Text
-             
+              
+             color={"#20B2AA"}
                 as={'span'}
                 // position={'relative'}
+                paddingBottom={"10px"}
                 _after={{
                   content: "''",
                   width: 'full',
@@ -51,15 +61,23 @@ import {
                   zIndex: -1,
                  
                 }}>
-                Dhiraj Garad
+               साक्षीविजय संकल्प 
               </Text>
               <br />
               <Text as={'span'} color={'red.400'} fontSize={{ base: '25px', sm: '4xl', md: '3xl',lg:"4xl",xl:"5xl"}}>
-                Full Stack Web Developer
+              या वेबसाइटवर हार्दिक स्वागत.
               </Text>
             </Heading>
-            <Text color={'black.700'}>
-            A passionate Full  Stack Web Developer, love to developing scalable websites using a wide range of front-end and back-end skills  
+            <Text
+            
+            color={'#DC143C'}
+           fontSize={"xl"}
+            >
+           
+            
+            आपल्‍या निवडणूकीतील  प्रचार करण्यासाठी आणि आपल्‍या निवडणूकीतील यशासाठी आम्‍ही घेउन आलो आहोत डिजिटल निवडणूक
+            प्रचार तर चला आता, आपला पूर्ण निवडणूक प्रचार सोपवा आमच्‍यावर
+            
             </Text>
             <Stack 
               spacing={{ base: 4, sm: 6 }}
@@ -123,13 +141,14 @@ import {
               color={useColorModeValue('red.50', 'red.400')}
             />
             <Box
-              zIndex={'-1'}
+              zIndex={'1'}//-1
               position={'relative'}
               height={'450px'}
               rounded={'2xl'}
               boxShadow={'2xl'}
               width={'350px'}
               overflow={'hidden'}
+            
               >
               <IconButton
                 aria-label={'Play Button'}
@@ -143,7 +162,7 @@ import {
                 top={'50%'}
                 transform={'translateX(-50%) translateY(-50%)'}
               />
-              <Image
+             { /*<Image
                 // position={'ralative'}
               
                 alt={'Hero Image'}
@@ -152,8 +171,30 @@ import {
                 w={'100%'}
                 h={'160%'}
                 mt='-40px'
-                src={img1}
+                
               />
+          */}
+
+
+
+
+
+
+  <iframe
+    title='"'
+    src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+    allowFullScreen
+   
+    style={{width:"100%",height:"100%",position:"absolute",display:"block",zIndex:"2000000000"}}
+  /> 
+
+
+
+
+
+
+
+
             </Box>
           </Flex>
         </Stack>
