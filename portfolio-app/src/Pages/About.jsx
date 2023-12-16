@@ -26,10 +26,10 @@ function About(){
     
     {/*style={{width:'930px',marginLeft:'700px',marginTop:'200px'}}*/}
     <Box w='694px'   ml={{lg:"500px",md:"500px",sm:"260px"}} mt={{lg:"200",sm:"80px"}} textAlign={'center'} align='center' >
-    <Text   fontSize={{lg:"22px",md:"12px",sm:"9px"}} lineHeight='24px' marginBottom='28px' textAlign="left" marginRight='100' color='black' fontWeight='bold' fontFamily='sans-serif' height='2'  >मी संदिप गरड आणि मी आहे <span    style={{ color: '#F08080', fontWeight: 'bold',marginLeft:'10px' }}>
+    <Text   fontSize={{lg:"22px",md:"12px",sm:"9px"}} lineHeight='24px' marginBottom='28px' textAlign="left" marginRight='100' color='black' fontWeight='bold' fontFamily='sans-serif' height='2'  >I'm Dhiraj Garad I'm a <span    style={{ color: '#F08080', fontWeight: 'bold',marginLeft:'10px' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
-            words={[ 'डिजिटल निवडणूक प्रचारक ','डिजिटल जाहिरातदार', 'LIC प्रतिनिधी']}
+            words={[ 'Full-Stack Web Developer','Problem Solver', 'Coder']}
             loop
             cursor
             cursorStyle='|'
