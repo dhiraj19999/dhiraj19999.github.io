@@ -21,14 +21,24 @@ import tra3 from "../Images/movix3.png";
 import tra4 from "../Images/movix4.png";
 import tra5 from "../Images/movix5.png";
 import tra6 from "../Images/movix6.png";
-import sce1 from "../Images/sce1.png";
-import sce2 from "../Images/sce2.png";
-import sce3 from "../Images/sce3.png";
-import sce4 from "../Images/sce4.png";
-import sce5 from "../Images/sce5.png";
+import sce1 from "../Images/meetup1.png";
+import sce2 from "../Images/meetup2.png";
+import sce3 from "../Images/meetup3.png";
+import sce4 from "../Images/meetup4.png";
+import sce5 from "../Images/meetup5.png";
 import redux from "../Images/redux.png";
 import sce6 from "../Images/sce6.png";
 import scss from "../Images/scss2.png";
+import foodi1 from "../Images/FOODI1.png";
+import foodi2 from "../Images/FOODI2.png";
+import foodi3 from "../Images/FOODI3.png";
+import foodi4 from "../Images/FOODI4.png";
+import foodi5 from "../Images/FOODI5.png";
+import foodi6 from "../Images/FOODI6.png";
+import foodi7 from "../Images/FOODI7.png";
+import foodi8 from "../Images/FOODI8.png";
+import foodi9 from "../Images/FOODI9.png";
+import foodi10 from "../Images/FOODI10.png";
 import Aos from "aos";
 import { SimpleGrid } from "@chakra-ui/react";
 function Project() {
@@ -36,13 +46,31 @@ function Project() {
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
   const [count4, setCount4] = useState(0);
-  let sce = [sce1, sce2, sce3, sce4, sce5, sce6, "jj"];
+  const [count5, setCount5] = useState(0);
+  let sce = [sce1, sce2, sce3, sce4, sce5, "jj"];
   let arr = [men, women, login, address, "hj"];
   let news = [news1, news2, news3, news4, news5, news6, "kkk"];
   let tra = [tra1, tra2, tra3, tra4, tra5, tra6, "jjj"];
+  let foodi = [
+    foodi1,
+    foodi2,
+    foodi3,
+    foodi4,
+    foodi5,
+    foodi6,
+    foodi7,
+    foodi8,
+    foodi9,
+    foodi10,
+    "f",
+  ];
+  if (count5 == 10) {
+    setCount5((prevCount5) => prevCount5 - 10);
+  }
   if (count == 4) {
     setCount((prevCount) => prevCount - 4);
   }
+
   if (count2 == 6) {
     setCount2((prevCount2) => prevCount2 - 6);
   }
@@ -51,8 +79,8 @@ function Project() {
     setCount3((prevCount3) => prevCount3 - 6);
   }
 
-  if (count4 == 6) {
-    setCount4((prevCount4) => prevCount4 - 6);
+  if (count4 == 5) {
+    setCount4((prevCount4) => prevCount4 - 5);
   }
 
   let html =
@@ -85,6 +113,15 @@ function Project() {
   useEffect(() => {
     const ids = setInterval(() => {
       setCount2((prevCount2) => prevCount2 + 1);
+    }, 2000);
+
+    return () => {
+      clearInterval(ids);
+    };
+  }, []);
+  useEffect(() => {
+    const ids = setInterval(() => {
+      setCount5((prevCount5) => prevCount5 + 1);
     }, 2000);
 
     return () => {
@@ -251,7 +288,7 @@ function Project() {
                   </Text>
 
                   <Center>
-                    <a href="https://movix-main-chi.vercel.app/">
+                    <a href="https://movix-main-chi.vercel.app/" target="blank">
                       {" "}
                       <Button
                         _hover={{ bg: "black", color: "pink" }}
@@ -269,7 +306,10 @@ function Project() {
                         Live
                       </Button>{" "}
                     </a>
-                    <a href="https://github.com/dhiraj19999/Movie-app">
+                    <a
+                      href="https://github.com/dhiraj19999/Movie-app"
+                      target="blank"
+                    >
                       {" "}
                       <Button
                         _hover={{ bg: "black", color: "pink" }}
@@ -311,7 +351,7 @@ function Project() {
                     h={{ lg: "300px", md: "300px", base: "230px", sm: "300px" }}
                     mt="10px"
                     ml="10px"
-                    src={arr[count]}
+                    src={foodi[count5]}
                   />
 
                   <Text
@@ -325,7 +365,7 @@ function Project() {
                       md: "-50px",
                     }}
                   >
-                    Bewakoof Clone
+                    FOODI APP
                   </Text>
 
                   <Center>
@@ -339,20 +379,127 @@ function Project() {
                         sm: "-45px",
                         base: "-22px",
                       }}
+                      mr={{ xl: "8px", lg: "8px" }}
                       borderRadius={"10px"}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
                     />
                     <Image
                       src={css}
                       w="40px"
                       mt="20px"
-                      ml="50px"
+                      mr={{ xl: "8px", lg: "8px" }}
                       borderRadius={"10px"}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
                     />
                     <Image
                       src={js}
                       w="40px"
                       mt="20px"
-                      ml="50px"
+                      mr={{ xl: "8px", lg: "8px" }}
+                      borderRadius={"10px"}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
+                    />
+                    <Image
+                      src={react}
+                      w="40px"
+                      mt="20px"
+                      mr={{ xl: "8px", lg: "8px" }}
+                      borderRadius={"10px"}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
+                    />
+                    <Image
+                      src={
+                        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png"
+                      }
+                      w="40px"
+                      mt="20px"
+                      mr={{ xl: "8px", lg: "8px" }}
+                      borderRadius={"10px"}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
+                    />
+                    <Image
+                      src={
+                        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.svg"
+                      }
+                      w="40px"
+                      mt="20px"
+                      mr={{ xl: "8px", lg: "8px" }}
+                      borderRadius={"10px"}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
+                    />
+                    <Image
+                      src={
+                        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/express-js-icon.svg"
+                      }
+                      w="40px"
+                      mt="20px"
+                      mr={{ xl: "5px", lg: "5px" }}
+                      borderRadius={"10px"}
+                      height={{
+                        sm: "22px",
+                        base: "22px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
+                    />
+                    <Image
+                      src={
+                        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/node-js-black-icon.svg"
+                      }
+                      w="40px"
+                      mt="20px"
+                      borderRadius={"10px"}
+                      mr={{ xl: "8px", lg: "8px" }}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
+                    />
+                    <Image
+                      src={
+                        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-firebase-icon.svg"
+                      }
+                      w="40px"
+                      mt="20px"
+                      mr={{ xl: "8px", lg: "8px" }}
+                      height={{
+                        sm: "27px",
+                        base: "27px",
+                        lg: "42px",
+                        xl: "42px",
+                      }}
                       borderRadius={"10px"}
                     />
                   </Center>
@@ -380,14 +527,15 @@ function Project() {
                       base: "300px",
                     }}
                   >
-                    Bewakoof is an e-commerce website for shopping clothes and
-                    various daily uses Individual project which is completed in
-                    five days Login,singup and cart,Men's Product page and
-                    Women's product page functionality are developed
+                    FOODI is an Food ordering and food delivery platform where
+                    you can order your favorite food by sitting in your home,
+                    this website have login,signup,add to cart and Stripe
+                    payment method it also have admin dashbord where we can
+                    manage the users and items
                   </Text>
 
                   <Center>
-                    <a href="https://gleaming-meerkat-64241b.netlify.app/">
+                    <a href="https://foodie-app-3410b.web.app/" target="blank">
                       {" "}
                       <Button
                         position={""}
@@ -405,7 +553,10 @@ function Project() {
                         Live
                       </Button>{" "}
                     </a>
-                    <a href="https://github.com/dhiraj19999/Bewakoof-Website-Clone">
+                    <a
+                      href="https://github.com/dhiraj19999/FOODI"
+                      target="blank"
+                    >
                       {" "}
                       <Button
                         position={""}
@@ -604,13 +755,15 @@ function Project() {
                       md: "-50px",
                     }}
                   >
-                    Scheduler
+                    MeetUp
                   </Text>
 
                   <Center>
                     <Image
-                      src={html}
-                      w="40px"
+                      src={
+                        "https://media.licdn.com/dms/image/D5612AQHJKVf2i9XXzw/article-cover_image-shrink_600_2000/0/1697159715452?e=2147483647&v=beta&t=w3POH8gXp2o9_h8qYQOu80hrfp22-kXfUJQYLt9Qt7I"
+                      }
+                      w="50px"
                       mt="20px"
                       ml={{
                         lg: "-45px",
@@ -620,13 +773,15 @@ function Project() {
                       }}
                     />
                     <Image
-                      src={css}
-                      w="40px"
+                      src={"https://shadcn.com/og.jpg"}
+                      w="50px"
                       mt="20px"
                       ml={{ lg: "30px", md: "30px", sm: "50", base: "10px" }}
                     />
                     <Image
-                      src={js}
+                      src={
+                        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png"
+                      }
                       w="40px"
                       mt="20px"
                       ml={{ lg: "30px", md: "30px", sm: "50", base: "10px" }}
@@ -636,19 +791,21 @@ function Project() {
                       w="40px"
                       mt="20px"
                       ml={{ lg: "30px", md: "30px", sm: "30", base: "10px" }}
-                      src="https://img.icons8.com/external-others-inmotus-design/2x/external-API-vkontakte-others-inmotus-design-2.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
                     />
                     <Image
                       w="40px"
                       mt="20px"
                       ml={{ lg: "30px", md: "30px", sm: "30", base: "10px" }}
-                      src={react}
+                      src={
+                        "https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+                      }
                     />
                     <Image
                       w="40px"
                       mt="20px"
                       ml={{ lg: "30px", md: "30px", sm: "30", base: "10px" }}
-                      src={chakra}
+                      src={"https://cdn.42matters.com/sdk/getstream.io.png"}
                     />
                   </Center>
 
@@ -675,15 +832,15 @@ function Project() {
                       base: "300px",
                     }}
                   >
-                    Schdeular is a powerful project management system which help
-                    to complete projects efficientl. Price,Login,Admin, Calender
-                    system are developed its collaborative project, completed in
-                    five days, area of responsibility is to Develope Contact
-                    section
+                    MeetUp Built with the latest Next.js and TypeScript, this
+                    project replicates Zoom, a widely used video conferencing
+                    tool. It enables users to securely log in, create meetings
+                    and access various meeting functionalities such as
+                    recording, screen sharing, and managing participants.
                   </Text>
 
                   <Center>
-                    <a href="https://schedulermonday.netlify.app/">
+                    <a href="https://main--meetup-video-conference-app.netlify.app">
                       {" "}
                       <Button
                         _hover={{ bg: "black", color: "pink" }}
@@ -701,7 +858,7 @@ function Project() {
                         Live
                       </Button>{" "}
                     </a>
-                    <a href="https://github.com/dhiraj19999/energized-trick-9718">
+                    <a href="https://github.com/dhiraj19999/MeetUp">
                       {" "}
                       <Button
                         _hover={{ bg: "black", color: "pink" }}
