@@ -16,7 +16,7 @@ import {
 import { AspectRatio } from "@chakra-ui/react";
 import styles from "../Componentst/MainPa.module.css";
 import "../App.css";
-import img1 from "../Images/profile.png";
+import img1 from "../Images/dhiraj-port.jpg";
 import { DownloadIcon } from "@chakra-ui/icons";
 
 export default function Home() {
@@ -135,9 +135,9 @@ export default function Home() {
 
               alt={"Hero Image"}
               align={"center"}
-              w={"100%"}
-              h={"160%"}
-              mt="-40px"
+              w={"200%"}
+              h={"120%"}
+              mt="-10px"
               src={img1}
             />
 
